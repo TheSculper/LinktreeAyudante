@@ -1,2 +1,2 @@
 # LinktreeAyudante
-Este es el Linktree dónde alojo mis recursos de ayudante
+Este es el Linktree donde alojo mis recursos de ayudante
