@@ -6,9 +6,9 @@
     <meta name="theme-color" content="#f5f3ee">
     <meta
       name="description"
-      content="Un espacio para encontrar los recursos de ayudante."
+      content="Recursos y agenda de Robert von Loebenstein Sepúlveda, ayudante."
     >
-    <title>Recursos de ayudante</title>
+    <title>Robert von Loebenstein Sepúlveda · Ayudante</title>
     <style>
       :root {
         color-scheme: light;
@@ -77,6 +77,19 @@
         border-radius: 18px;
         background: #fffefa;
         box-shadow: 0 4px 16px rgb(44 41 32 / 4%);
+        color: inherit;
+        text-decoration: none;
+        transition: border-color 160ms ease, transform 160ms ease;
+      }
+
+      .resource:hover {
+        transform: translateY(-2px);
+        border-color: #c9cdbd;
+      }
+
+      .resource:focus-visible {
+        outline: 3px solid #687258;
+        outline-offset: 3px;
       }
 
       .resource-number {
@@ -104,6 +117,37 @@
         line-height: 1.5;
       }
 
+      .section-heading {
+        margin: -6px 0 18px;
+        font-size: clamp(1.35rem, 4vw, 1.8rem);
+        letter-spacing: -0.035em;
+        line-height: 1.2;
+      }
+
+      .agenda {
+        margin-top: 32px;
+        padding: 22px;
+        border: 1px dashed #c9cdbd;
+        border-radius: 18px;
+        background: #eef0e8;
+      }
+
+      .agenda .eyebrow {
+        margin-bottom: 10px;
+      }
+
+      .agenda h2 {
+        margin: 0 0 6px;
+        font-size: 1.1rem;
+      }
+
+      .agenda > p:last-child {
+        margin: 0;
+        color: #65635d;
+        font-size: 0.92rem;
+        line-height: 1.5;
+      }
+
       footer {
         margin-top: 40px;
         color: #89867e;
@@ -126,40 +170,50 @@
   <body>
     <main>
       <header>
-        <p class="eyebrow">Linktree · Ayudante</p>
-        <h1>Todo lo que necesitas, en un solo lugar.</h1>
+        <p class="eyebrow">Ayudante · Robert von Loebenstein Sepúlveda</p>
+        <h1>Tus recursos para las clases, en un solo lugar.</h1>
         <p class="intro">
-          Aquí encontrarás materiales, enlaces y recursos útiles para las clases.
-          Elige una tarjeta para empezar.
+          Soy Robert von Loebenstein Sepúlveda. Aquí encontrarás materiales,
+          enlaces y recursos útiles para las clases.
         </p>
       </header>
 
-      <section class="resources" aria-label="Recursos">
-        <!-- Duplica una tarjeta y reemplaza el título y la descripción por cada recurso. -->
-        <article class="resource">
+      <section class="resources" aria-labelledby="preparation-heading">
+        <div>
+          <p class="eyebrow">Material de estudio</p>
+          <h2 class="section-heading" id="preparation-heading">
+            Preparación para prueba de traspaso
+          </h2>
+        </div>
+        <a
+          class="resource"
+          href="preparacion-prueba-traspaso/Precalculo-Stewart.pdf"
+        >
           <span class="resource-number" aria-hidden="true">01</span>
           <div>
-            <h2>Nombre del recurso</h2>
-            <p>Añade aquí una breve descripción y el enlace correspondiente.</p>
+            <h2>Precálculo: Stewart</h2>
+            <p>Texto de precálculo para preparar la prueba.</p>
           </div>
-        </article>
-        <article class="resource">
+        </a>
+        <a
+          class="resource"
+          href="preparacion-prueba-traspaso/Temario-Teste-Pre-Calculo-Ing-Civil.pdf"
+        >
           <span class="resource-number" aria-hidden="true">02</span>
           <div>
-            <h2>Nombre del recurso</h2>
-            <p>Añade aquí una breve descripción y el enlace correspondiente.</p>
+            <h2>Temario de precálculo · Ingeniería Civil</h2>
+            <p>Temario para la prueba de traspaso.</p>
           </div>
-        </article>
-        <article class="resource">
-          <span class="resource-number" aria-hidden="true">03</span>
-          <div>
-            <h2>Nombre del recurso</h2>
-            <p>Añade aquí una breve descripción y el enlace correspondiente.</p>
-          </div>
-        </article>
+        </a>
       </section>
 
-      <footer>Recursos de ayudante</footer>
+      <section class="agenda" aria-label="Agenda">
+        <p class="eyebrow">Próximamente</p>
+        <h2>Agenda</h2>
+        <p>Más adelante, aquí podrás consultar un calendario para agendar los días.</p>
+      </section>
+
+      <footer>Recursos de ayudante · Robert von Loebenstein Sepúlveda</footer>
     </main>
   </body>
 </html>
